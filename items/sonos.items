@@ -1,0 +1,56 @@
+
+Group  Sonos                                                     <player>             (Livingroom)
+
+// Living Room
+Group  LR_Sonos (Sonos)
+
+String LR_Sonos_Add                     "Add [%s]"                  <sonos_add>          (LR_Sonos)            {channel="sonos:PLAY5:1:add"}
+Switch LR_Sonos_SetAlarm                "Set Alarm"                 <sonos_alarm>        (LR_Sonos)            {channel="sonos:PLAY5:1:alarm"}
+String LR_Sonos_AlarmProperties         "Alarm Properties [%s]"     <sonos_alarm_prop>   (LR_Sonos)            {channel="sonos:PLAY5:1:alarmproperties"}
+Switch LR_Sonos_AlarmIsrunning          "Alarm is running"          <sonso_alarm_run>    (LR_Sonos)            {channel="sonos:PLAY5:1:alarmrunning"}
+Player LR_Sonos_Control                 "Control"                   <sonos_control>      (LR_Sonos)            {channel="sonos:PLAY5:1:control"}
+String LR_Sonos_CurrentAlbum            "Album [%s]"                <sonos_album>        (LR_Sonos)            {channel="sonos:PLAY5:1:currentalbum"}
+String LR_Sonos_CurrentArtist           "Artist [%s]"               <sonos_artist>       (LR_Sonos)            {channel="sonos:PLAY5:1:currentartist"}
+String LR_Sonos_CurrentTitle            "Title [%s]"                <sonos_title>        (LR_Sonos)            {channel="sonos:PLAY5:1:currenttitle"}
+String LR_Sonos_CurrentTrack            "Track [%s]"                <sonos_track>        (LR_Sonos)            {channel="sonos:PLAY5:1:currenttrack"}
+Switch LR_Sonos_Shuffle                 "Shuffle"                   <sonos_shuffle>      (LR_Sonos)            {channel="sonos:PLAY5:1:shuffle"}
+String LR_Sonos_Repeat                  "Repeat [%s]"               <sonos_repeat>       (LR_Sonos)            {channel="sonos:PLAY5:1:repeat"}
+String LR_Sonos_Favorite                "Favorite [%s]"             <sonos_favorite>     (LR_Sonos)            {channel="sonos:PLAY5:1:favorite"}
+Switch LR_Sonos_Led                     "Led"                       <sonos_led>          (LR_Sonos)            {channel="sonos:PLAY5:1:led"}
+Switch LR_Sonos_LocalCoordinator        "Local Coordinator"         <sonos_coordinator>  (LR_Sonos)            {channel="sonos:PLAY5:1:localcoordinator"}
+Switch LR_Sonos_Mute                    "Mute"                      <sonos_mute>         (LR_Sonos)            {channel="sonos:PLAY5:1:mute"}
+String LR_Sonos_NotificationSound       "Notification Sound [%s]"   <sonos_notification> (LR_Sonos)            {channel="sonos:PLAY5:1:notificationsound"}
+Dimmer LR_Sonos_Notificationsoundvolume "Notification Sound Volume" <soundvolume>        (LR_Sonos)            {channel="sonos:PLAY5:1:notificationvolume"}
+String LR_Sonos_PlayPlaylist            "Play Playlist [%s]"        <sonos_playlist>     (LR_Sonos)            {channel="sonos:PLAY5:1:playlist"}
+Switch LR_Sonos_PlayQueue               "Play Queue"                <sonos_que>          (LR_Sonos)            {channel="sonos:PLAY5:1:playqueue"}
+Number LR_Sonos_PlayTrack               "Play Track"                <sonos_play_track>   (LR_Sonos)            {channel="sonos:PLAY5:1:playtrack"}
+String LR_Sonos_PlayURI                 "Play URI [%s]"             <sonos_play_uri>     (LR_Sonos)            {channel="sonos:PLAY5:1:playuri"}
+Switch LR_Sonos_PublicAddress           "Public Address"            <sonos_publiv>       (LR_Sonos)            {channel="sonos:PLAY5:1:publicaddress"}
+String LR_Sonos_Radio                   "Radio [%s]"                <sonos_radio>        (LR_Sonos)            {channel="sonos:PLAY5:1:radio"}
+String LR_Sonos_Remove                  "Remove [%s]"               <sonos_remove>       (LR_Sonos)            {channel="sonos:PLAY5:1:remove"}
+Switch LR_Sonos_Restore                 "Restore"                   <sonos_restore>      (LR_Sonos)            {channel="sonos:PLAY5:1:restore"}
+Switch LR_Sonos_RestoreAll              "Restore All"               <sonos_restore_all>  (LR_Sonos)            {channel="sonos:PLAY5:1:restoreall"}
+Switch LR_Sonos_Save                    "Save"                      <sonos_save>         (LR_Sonos)            {channel="sonos:PLAY5:1:save"}
+Switch LR_Sonos_SaveAll                 "Save All"                  <sonos_save_all>     (LR_Sonos)            {channel="sonos:PLAY5:1:saveall"}
+Number LR_Sonos_Snooze                  "Snooze"                    <sonos_snooze>       (LR_Sonos)            {channel="sonos:PLAY5:1:snooze"}
+Switch LR_Sonos_StandAlone              "Stand Alone"               <sonos_stand_alone>  (LR_Sonos)            {channel="sonos:PLAY5:1:standalone"}
+String LR_Sonos_State                   "State [%s]"                <sonos_state>        (LR_Sonos)            {channel="sonos:PLAY5:1:state"}
+Switch LR_Sonos_Stop                    "Stop"                      <sonos_stop>         (LR_Sonos)            {channel="sonos:PLAY5:1:stop", autoupdate="false"}
+Dimmer LR_Sonos_Volume                  "Volume"                    <soundvolume>        (LR_Sonos)            {channel="sonos:PLAY5:1:volume"}
+String LR_Sonos_ZoneGroupID             "Zone Group ID [%s]"        <sonos_zone>         (LR_Sonos)            {channel="sonos:PLAY5:1:zonegroupid"}
+String LR_Sonos_ZoneName                "Zone Name [%s]"            <sonos_zone>         (LR_Sonos)            {channel="sonos:PLAY5:1:zonename"}
+String LR_Sonos_Coordinator             "Coordinator [%s]"          <sonos_coordinator>  (LR_Sonos)            {channel="sonos:PLAY5:1:coordinator"}
+Number LR_Sonos_SleepTimer              "Sleep Timer"               <sonos_sleep_timer>  (LR_Sonos)            {channel="sonos:PLAY5:1:sleeptimer"}
+String LR_Sonos_CurrentAVtransportURI   "AV transport URI [%s]"     <sonos_uri>          (LR_Sonos)            {channel="sonos:PLAY5:1:currenttransporturi"}
+String LR_Sonos_CurrenttrackURI         "track URI [%s]"            <sonos_uri>          (LR_Sonos)            {channel="sonos:PLAY5:1:currenttrackuri"}
+
+
+
+// Player Sonos_Controller              "Controller"                                     (Sonos) {channel="sonos:PLAY5:1:control"}
+// Dimmer Sonos_Volume                  "Volume [%.1f %%]"          <soundvolume>        (Sonos) {channel="sonos:PLAY5:1:volume"}
+// Switch Sonos_Mute                    "Mute"                      <soundvolume_mute>   (Sonos) {channel="sonos:PLAY5:1:mute"}
+// Switch Sonos_LED                     "LED"                       <switch>             (Sonos) {channel="sonos:PLAY5:1:led"}
+// String Sonos_CurrentTrack            "Now playing [%s]"          <text>               (Sonos) {channel="sonos:PLAY5:1:currenttrack"}
+// String Sonos_State                   "Status [%s]"               <text>               (Sonos) {channel="sonos:PLAY5:1:state"}
+// String Sonos_NotificationSound       "Notification Sound [%s]"   <sonos_notification> (Sonos) {channel="sonos:PLAY5:1:notificationsound"}
+// Dimmer Sonos_Notificationsoundvolume "Notification Sound Volume" <soundvolume>        (Sonos) {channel="sonos:PLAY5:1:notificationvolume"}

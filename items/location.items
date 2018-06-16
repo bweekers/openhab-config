@@ -1,0 +1,1 @@
+String	mqttfind_Bart			"Bart is @ [%s]"	(All)	{mqtt="<[find3:serioussheep/location/Bart:state:JSONPATH($.location)]"}

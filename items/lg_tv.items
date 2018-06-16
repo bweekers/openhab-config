@@ -1,0 +1,3 @@
+String LG_TV0_Application "Application [%s]" { channel="lgwebos:WebOSTV:192_168_0_36:appLauncher"}
+String LG_TV0_Channel "Channel [%S]"         { channel="lgwebos:WebOSTV:192_168_0_36:channelName"}
+String LG_TV0_Toast                          { channel="lgwebos:WebOSTV:192_168_0_36:toast"}

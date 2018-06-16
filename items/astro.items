@@ -1,0 +1,6 @@
+
+Group Astro <sun_clouds>
+
+DateTime    Sunrise_Time         "Zonsopkomst [%1$tH:%1$tM]"                              <sun>    (Astro) {channel="astro:sun:home:rise#start"}
+DateTime    Sunset_Time          "Zonsondergang [%1$tH:%1$tM]"                            <sun>    (Astro) {channel="astro:sun:home:set#start"}
+

@@ -1,0 +1,14 @@
+// Overarching group
+Group House
+
+// Location perspective
+Group GroundFloor  (House)
+Group Livingroom   (GroundFloor)
+Group Sittingroom  (GroundFloor)
+
+// Functional perspective
+// Group Sensors      (House)
+// Group Temperatures (Sensors)
+
+// Active groups
+Group:Switch:OR(ON, OFF)  Lights  "All Lights [(%d)]"  (House)

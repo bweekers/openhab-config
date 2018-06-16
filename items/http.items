@@ -1,0 +1,14 @@
+
+//String PV_Data { http="<[http://www.goodwe-power.com/Mobile/GetMyPowerStationById?stationID=4ed3f9b9-37de-430e-9f6b-7b9e18e5fb48:10000:REGEX((.*))]" }
+//http://www.goodwe-power.com/Mobile/GetMyPowerStationById?stationID=4ed3f9b9-37de-430e-9f6b-7b9e18e5fb48
+
+// Use pvDataCache defined in http.cfg
+// String PV_Data { http="<[pvDataCache:10000:REGEX((.*))]" }
+
+String PV_CurrentPower
+String PV_CurrentStatus
+
+// {"BTC":{"EUR":12633.86}}
+
+// String BTC_Euro_Value { http="<[https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC&tsyms=EUR:10000:JSONPATH($.BTC.EUR)]" }
+
