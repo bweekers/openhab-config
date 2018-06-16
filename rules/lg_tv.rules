@@ -1,0 +1,28 @@
+
+rule "Send Journaal Toast message 17:55 MON-SUN"
+when
+    Time cron "0 55 17 ? * MON-SUN" // 17:55:00, every day, every month, from MON to SUN
+then
+    LG_TV0_Toast.sendCommand("Het 18:00 uur NOS journaal begint zo ...")
+end
+
+// Cron:
+// Seconds
+// Minutes
+// Hours
+// Day-of-Month
+// Month
+// Day-of-Week (*)
+// Year (optional field)
+
+// (*) Day-of-Week
+// 0 -> Sun
+//
+// 1 -> Mon
+// 2 -> Tue
+// 3 -> Wed
+// 4 -> Thu
+// 5 -> Fri
+// 6 -> Sat
+//
+// 7 -> Sun

@@ -1,0 +1,17 @@
+
+rule "Get PV Data - every 5 minutes"
+when
+    Time cron "0 0/5 * ? * MON-SUN"
+then
+    var String jsonStr = sendHttpGetRequest("http://www.goodwe-power.com/Mobile/GetMyPowerStationById?stationID=4ed3f9b9-37de-430e-9f6b-7b9e18e5fb48")
+
+	//Debug logging
+ 	logInfo("PV DATA", jsonStr)
+
+ 	val currentPower  = transform("JSONPATH", "$.curpower", jsonStr)
+	val currentStatus = transform("JSONPATH", "$.status",   jsonStr)
+
+	postUpdate(PV_CurrentPower ,currentPower)
+	postUpdate(PV_CurrentStatus,currentStatus)
+
+end

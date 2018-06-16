@@ -1,0 +1,10 @@
+
+rule "Pause Sonos 17:58 MON-SUN"
+when
+    Time cron "0 58 17 ? * MON-SUN" // 17:58:00, every day, every month, from MON to SUN
+then
+	playSound("nos_leader.mp3")
+	// sendCommand(Sonos_Controller,PAUSE)
+    // LG_TV0_Toast.sendCommand("Het 18:00 uur NOS journaal is begonnen ...")
+end
+
